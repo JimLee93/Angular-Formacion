@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML_CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Mi primer título</h1>
+        <h2>Mi segundo título</h2>
+        <h3>Mi tercer título</h3>
+        <h4>Mi cuarto título</h4>
+        <h5>Mi quinto título</h5>
+        <h6>Mi sexto título</h6>
+
+        <p class="color-letras">Mi primer párrafo
+            <span>Span dentro del párrafo</span>
+        </p>
+        <br>
+        <p>Mi segundo párrafo <b>bold dentro del párrafo</b></p>
+
+        <hr>
+
+        <!-- comentarios de la web-->
+
+        <a href="vistas/vista_1.html" target="_blank">Mi link</a>
+        <br><br>
+
+        <div class="fondo">Contenido dentro del div
+            <h2>Subtítulo dentro del div</h2>
+            <p>Párrafo dentro del div</p>
+
+        </div>
+        <section>Contenido dentro de la sección</section>
+
+        <!-- Formulario de entrada de datos -->
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Escribe tu nombre">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <br> <br>
+            <textarea id="apellido" name="apellido"
+                placeholder="Escribe tu apellido"></textarea>
+            <br> <br>
+            <select name="select" id="select">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+            <button id="grabar">Grabar</button>
+        </form>
+        <!-- Fin del formulario de entrada de datos -->
+
+        <!-- Script para manejar el formulario -->
+        <!-- Este script copia el valor del campo nombre al campo apellido al enviar el formulario -->
+        <script>
+            const formulario = document.querySelector("form");
+            const nombre = document.getElementById("nombre");
+            const apellido = document.getElementById("apellido");
+
+            formulario.addEventListener("submit", function (event) {
+                event.preventDefault();
+                apellido.value = nombre.value;
+            });
+        </script>
+        <!-- Fin del script para manejar el formulario -->
+        <!-- Listas en HTML -->
+
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <ol>
+            <li value="20">Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>
+                <ol>
+                    <li style="list-style-type: upper-roman;">Sub-elemento
+                        1</li>
+                    <li style="list-style-type: upper-roman;">Sub-elemento
+                        2</li>
+                </ol>
+            </li>
+        </ol>
+        <!-- Fin de las listas en HTML -->
+
+        <!-- Imagen en HTML -->
+        <div class="fondo">
+            <img src="./img/images.jpg"
+                class="imagen-responsive">
+        </div>
+        <!-- Fin de la imagen en HTML -->
+
+        <!-- Tabla en HTML -->
+        <table class="tabla-responsive">
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+            </tr>
+        </table>
+        <br> <br>
+        <!-- Fin de la tabla en HTML -->
+
+        <div class="contenedor-principal">
+            <div class="figura px">Medidas en pixeles</div>
+            <div class="figura em">Medidas en em</div>
+            <div class="figura vw">Medidas en vw</div>
+        </div>
+    </body>
+</html>

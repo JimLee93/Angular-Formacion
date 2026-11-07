@@ -1,0 +1,84 @@
+h1 {
+    color: green;
+    font-style: italic;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: red;
+}
+
+p {
+    color: blue;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+.color-letras {
+    color: lightcoral;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.imagen-responsive {
+    width: 200px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: brown;
+    /* border-radius: 10%; */
+    background-color: blueviolet;
+    /*padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+    padding: 5px 15px 0px 40px;
+    margin: 10px 20px;
+}
+
+.fondo {
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+.contenedor-principal {
+    color: azure;
+    padding: 7px;
+    font-size: 12px;
+    background-color: darkslategrey;
+}
+
+.figura {
+    background-color: orange;
+    width: 180px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.px {
+    background-color: blue;
+    width: 180px;
+}
+
+.vw {
+    background-color: green;
+    width: 20vw;
+}
+
+.em {
+    background-color: purple;
+    width: 15em;
+}
+
+.tabla-responsive {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-responsive th, .tabla-responsive td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-responsive th {
+    background-color: lightgray;
+}
