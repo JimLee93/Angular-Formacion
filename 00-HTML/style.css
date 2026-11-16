@@ -66,6 +66,24 @@ p {
 .em {
     background-color: purple;
     width: 15em;
+    font-size: 1.1em;
+}
+
+body {
+    background-color: lightgray;
+    /*color: green;*/
+}
+
+.texto-naranjo {
+    color: orange;
+}
+
+/* Se aplica la ultima clase en caso de conflicto de colores, estilos, etc., 
+para indicar que la última clase aplicada tiene prioridad sobre 
+las anteriores, la ultima clase aplicada es la que se usa en el archivo CSS no
+en el HTML */
+.texto-azul {
+    color: blue;
 }
 
 .tabla-responsive {
